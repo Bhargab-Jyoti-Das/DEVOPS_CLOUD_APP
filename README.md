@@ -35,7 +35,7 @@ docker push <dockerhub-username>/flask-postgres-app:latest
 ```
 ## If dont want to create you can use my image ```bhadas/flask-postgres-app:latest```
 
-![alt text](image-1.png)
+![alt text](image.png)
 
 ### 2. Provision EKS with Terraform
 
@@ -48,8 +48,8 @@ terraform apply
 ```
 - `Validate cluster and node group status` 
 
-![alt text](image-3.png)
-![alt text](image-4.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
 ### 3. Deploy to Kubernetes
 
 ```sh
@@ -59,8 +59,8 @@ kubectl apply -f kubernetes-manifests/
 
 - Find the LoadBalancer EXTERNAL-IP with kubectl get svc flask-service
 
-![alt text](image-2.png)
+![alt text](image-3.png)
 
 - Visit: `http://<EXTERNAL-IP>/`
 
-![alt text](image.png)
+![alt text](image-4.png)
