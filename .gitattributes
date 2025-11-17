@@ -1,0 +1,24 @@
+# Set default behavior for text files
+* text=auto
+
+# Explicitly set LF for common text files and scripts
+*.md    text eol=lf
+*.txt   text eol=lf
+*.sh    text eol=lf
+*.json  text eol=lf
+*.yaml  text eol=lf
+*.yml   text eol=lf
+*.js    text eol=lf
+*.py    text eol=lf
+*.java  text eol=lf
+*.go    text eol=lf
+*.tf    text eol=lf # For Terraform files
+
+# Explicitly set CRLF for Windows-specific files (rare, but sometimes needed)
+# *.bat text eol=crlf
+
+# Treat certain files as binary (Git won't touch their line endings)
+*.png binary
+*.jpg binary
+*.gif binary
+*.zip binary
